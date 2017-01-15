@@ -1,0 +1,7 @@
+/home/batman/Developpement/workspace/100-days-of-code/src/main/java/com/ebizcuit/domain/article/Bizcuit.java
+/home/batman/Developpement/workspace/100-days-of-code/src/main/java/com/ebizcuit/domain/enums/TypeBizcuit.java
+/home/batman/Developpement/workspace/100-days-of-code/src/main/java/com/ebizcuit/domain/article/AbstractArticle.java
+/home/batman/Developpement/workspace/100-days-of-code/src/main/java/com/ebizcuit/repository/BizcuitRepository.java
+/home/batman/Developpement/workspace/100-days-of-code/src/main/java/com/ebizcuit/domain/Command.java
+/home/batman/Developpement/workspace/100-days-of-code/src/main/java/com/ebizcuit/controller/BizcuitController.java
+/home/batman/Developpement/workspace/100-days-of-code/src/main/java/com/ebizcuit/EbizcuitApplication.java
