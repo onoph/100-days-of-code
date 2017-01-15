@@ -1,0 +1,1 @@
+{"version":3,"sources":["domain/Bizcuit.ts"],"names":[],"mappings":";AAAA;IAAA;IAIA,CAAC;IAAD,cAAC;AAAD,CAJA,AAIC,IAAA;AAJY,0BAAO","file":"Bizcuit.js","sourcesContent":["export class Bizcuit{\n    name: String;\n    reference: String;\n    price: number;\n}"]}

@@ -1,0 +1,16 @@
+<h2>Gestion des biscuits</h2>
+<h3>Liste des biscuits : </h3>
+<ul>
+    <li *ngFor="let biz in biscuits"><a (click)="editBizcuit(biz)">{{biz.name}} - {{biz.reference}}</a></li>
+</ul>
+
+<div *ngIf="currentBizcuit">
+    <input type="text" [(ngModel)]="editBizcuit.name" />
+    <input type="text" [(ngModel)]="editBizcuit.reference" />
+    <input type="text" [(ngModel)]="editBizcuit.price" />
+    <button (click)="saveBizcuit()">Valider</button>
+</div>
+
+<div>
+    <button (click)="resetBizcuit()">Ajouter un nouveau biscuit</button>
+</div>
