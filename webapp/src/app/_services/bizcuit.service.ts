@@ -16,7 +16,7 @@ export class BizcuitService{
     getAllBizcuits = function() : Observable<Array<Bizcuit>>
     {
         return this.http.get(this.baseUrl)
-                 .flatMap((data: any) => data.json())
+                 .map((data: any) => data.json())
                  .catch((err : any) => console.log('err', err))
     }
     /*

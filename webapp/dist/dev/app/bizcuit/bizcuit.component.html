@@ -1,1 +1,7 @@
 <h2>Liste des biscuits</h2>
+<li>
+    <ul *ngFor="let b of bizcuits">
+        {{b.name}} <button (click)="addToPanier(b)">Ajouter au panier</button> 
+    </ul>
+</li>
+<pre>{{bizcuits}}</pre>

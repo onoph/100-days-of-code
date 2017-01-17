@@ -1,0 +1,1 @@
+{"version":3,"sources":["model/PanierItem.ts"],"names":[],"mappings":";AACA;IAAA;IAGA,CAAC;IAAD,iBAAC;AAAD,CAHA,AAGC,IAAA;AAHY,gCAAU","file":"PanierItem.js","sourcesContent":["import {Article} from '../domain/Article';\nexport class PanierItem{\n    item: Article;\n    quantity:number;\n}"]}

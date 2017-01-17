@@ -17,7 +17,7 @@ var BizcuitService = (function () {
         this.baseUrl = "http://localhost:8080/bizcuit";
         this.getAllBizcuits = function () {
             return this.http.get(this.baseUrl)
-                .flatMap(function (data) { return data.json(); })
+                .map(function (data) { return data.json(); })
                 .catch(function (err) { return console.log('err', err); });
         };
     }

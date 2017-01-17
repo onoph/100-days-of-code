@@ -1,5 +1,5 @@
-export class Bizcuit{
-    name: String;
-    reference: String;
-    price: number;
+import { Article } from './Article';
+
+export class Bizcuit extends Article{
+    
 }

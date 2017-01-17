@@ -10,12 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var bizcuit_service_1 = require("../_services/bizcuit.service");
+var panier_service_1 = require("../_services/panier.service");
 var BizcuitComponent = (function () {
-    function BizcuitComponent(bizcuitService) {
+    function BizcuitComponent(bizcuitService, panierService) {
         this.bizcuitService = bizcuitService;
+        this.panierService = panierService;
         this.getAllBizcuits = function () {
-            var bizcuits = this.bizcuitService.getAllBizcuits();
-            console.log(bizcuits);
+            var _this = this;
+            console.log("getting bizcuits");
+            this.bizcuitService.getAllBizcuits()
+                .subscribe(function (data) { return _this.bizcuits = data; });
+            console.log(this.bizcuits);
+        };
+        this.addToPanier = function (bizcuit) {
+            this.panierService.addArticle(bizcuit);
         };
         this.getAllBizcuits();
     }
@@ -26,7 +34,8 @@ BizcuitComponent = __decorate([
         selector: '',
         templateUrl: './app/bizcuit/bizcuit.component.html'
     }),
-    __metadata("design:paramtypes", [bizcuit_service_1.BizcuitService])
+    __metadata("design:paramtypes", [bizcuit_service_1.BizcuitService,
+        panier_service_1.PanierService])
 ], BizcuitComponent);
 exports.BizcuitComponent = BizcuitComponent;
 

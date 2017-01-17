@@ -1,0 +1,1 @@
+{"version":3,"sources":["domain/Article.ts"],"names":[],"mappings":";AAAA;IAAA;IAIA,CAAC;IAAD,cAAC;AAAD,CAJA,AAIC,IAAA;AAJqB,0BAAO","file":"Article.js","sourcesContent":["export abstract class Article{\n    reference: String;\n    name: String;\n    price: number;\n}"]}

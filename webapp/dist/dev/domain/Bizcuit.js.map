@@ -1,1 +1,1 @@
-{"version":3,"sources":["domain/Bizcuit.ts"],"names":[],"mappings":";AAAA;IAAA;IAIA,CAAC;IAAD,cAAC;AAAD,CAJA,AAIC,IAAA;AAJY,0BAAO","file":"Bizcuit.js","sourcesContent":["export class Bizcuit{\n    name: String;\n    reference: String;\n    price: number;\n}"]}
+{"version":3,"sources":["domain/Bizcuit.ts"],"names":[],"mappings":";;;;;;AAAA,qCAAoC;AAEpC;IAA6B,2BAAO;IAApC;;IAEA,CAAC;IAAD,cAAC;AAAD,CAFA,AAEC,CAF4B,iBAAO,GAEnC;AAFY,0BAAO","file":"Bizcuit.js","sourcesContent":["import { Article } from './Article';\n\nexport class Bizcuit extends Article{\n    \n}"]}

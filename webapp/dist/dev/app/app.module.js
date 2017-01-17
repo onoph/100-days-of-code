@@ -13,11 +13,9 @@ var app_component_1 = require("./app.component");
 var app_routing_1 = require("./app.routing");
 var home_component_1 = require("./home/home.component");
 var about_component_1 = require("./about/about.component");
-//import {BizcuitListComponent} from './bizcuit/bizcuitList/bizcuitlist.component';
-//import {BizcuitItemComponent} from './bizcuit/bizcuitItem/bizcuitItem.component';
 var bizcuit_service_1 = require("./_services/bizcuit.service");
-//import { Bizcuit } from '../domain/Bizcuit';
 var bizcuit_component_1 = require("./bizcuit/bizcuit.component");
+var panier_service_1 = require("./_services/panier.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -38,7 +36,7 @@ AppModule = __decorate([
             http_1.JsonpModule,
             app_routing_1.routing
         ],
-        providers: [app_routing_1.appRoutingProviders, bizcuit_service_1.BizcuitService],
+        providers: [app_routing_1.appRoutingProviders, bizcuit_service_1.BizcuitService, panier_service_1.PanierService],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

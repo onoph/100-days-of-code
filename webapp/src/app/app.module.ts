@@ -7,11 +7,9 @@ import {AppComponent} from './app.component';
 import {routing, appRoutingProviders} from './app.routing';
 import {HomeComponent} from './home/home.component';
 import {AboutComponent} from './about/about.component';
-//import {BizcuitListComponent} from './bizcuit/bizcuitList/bizcuitlist.component';
-//import {BizcuitItemComponent} from './bizcuit/bizcuitItem/bizcuitItem.component';
 import { BizcuitService } from './_services/bizcuit.service';
-//import { Bizcuit } from '../domain/Bizcuit';
 import { BizcuitComponent } from './bizcuit/bizcuit.component';
+import { PanierService } from './_services/panier.service';
 
 
 @NgModule({
@@ -28,7 +26,7 @@ import { BizcuitComponent } from './bizcuit/bizcuit.component';
         JsonpModule,
         routing
     ],
-    providers: [appRoutingProviders, BizcuitService],
+    providers: [appRoutingProviders, BizcuitService, PanierService],
     bootstrap: [AppComponent]
 })
 
