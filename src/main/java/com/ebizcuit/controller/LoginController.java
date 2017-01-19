@@ -17,7 +17,7 @@ public class LoginController {
 	@Autowired
 	private AccountRepository repo;
 	
-	@RequestMapping(method=RequestMethod.GET)
+	@RequestMapping(method=RequestMethod.POST)
 	public @ResponseBody Account login(@RequestBody Account account)
 	{
 		Account accountDB = repo.findByUsername(account.getUsername());

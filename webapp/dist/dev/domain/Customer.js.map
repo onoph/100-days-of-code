@@ -1,0 +1,1 @@
+{"version":3,"sources":["domain/Customer.ts"],"names":[],"mappings":";AAAA;IAAA;IASA,CAAC;IAAD,eAAC;AAAD,CATA,AASC,IAAA;AATY,4BAAQ","file":"Customer.js","sourcesContent":["export class Customer{\n    id: number;\n    firstname: String;\n    lastname: String;\n    city: String;\n    address: String;\n    zip: String;\n    country: String;\n\n}"]}

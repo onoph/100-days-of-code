@@ -18,7 +18,7 @@ public class CommandController {
 	@Autowired
 	private CommandRepository repository;
 	
-	@RequestMapping(method = RequestMethod.GET)
+	@RequestMapping(value="/{customerId}", method = RequestMethod.GET)
 	public @ResponseBody List<Command> getAllCommands(){
 		return repository.findAll();
 	}

@@ -15,29 +15,25 @@ public class Command {
 
 	private Map<AbstractArticle, Integer> order;
 	private Double totalPrice;
-	private String commanditaire;
-	private String address;
+	private Customer customer;
 	
 	private Command()
 	{ }
-	
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
 	public Map<AbstractArticle, Integer> getOrder() {
 		return order;
 	}
+
 	public void setOrder(Map<AbstractArticle, Integer> order) {
 		this.order = order;
-	}
-	public String getCommanditaire() {
-		return commanditaire;
-	}
-	public void setCommanditaire(String commanditaire) {
-		this.commanditaire = commanditaire;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
 	}
 
 	public Double getTotalPrice() {
@@ -47,6 +43,15 @@ public class Command {
 	public void setTotalPrice(Double totalPrice) {
 		this.totalPrice = totalPrice;
 	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+	
 	
 	
 	

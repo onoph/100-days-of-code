@@ -1,0 +1,1 @@
+{"version":3,"sources":["domain/ArticleMap.ts"],"names":[],"mappings":";AAEA;IAAA;IAGA,CAAC;IAAD,iBAAC;AAAD,CAHA,AAGC,IAAA;AAHY,gCAAU","file":"ArticleMap.js","sourcesContent":["import {Article} from './Article';\n\nexport class ArticleMap{\n    article: Article;\n    quantity: number;\n}"]}
