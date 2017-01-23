@@ -31,7 +31,7 @@ public class AccountService {
 			throw new AccountException("No username supplied");
 		if(account.getPassword() == null)
 			throw new AccountException("No password supplied");
-		List<Account> all = repo.findAll();
+		List<Account> all = (List<Account>) repo.findAll();
 		List<Account> sameUser = all.stream()
 			.filter(findAccountWithUsername(account.getUsername()))
 			.collect(Collectors.toList());

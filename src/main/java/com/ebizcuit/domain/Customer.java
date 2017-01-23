@@ -1,14 +1,17 @@
 package com.ebizcuit.domain;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 
-@Document
+import org.springframework.data.annotation.Id;
+
+@Entity
 public class Customer {
 
-	@Id
+	@Id @GeneratedValue
 	private Long id;
 	private Account account;
+	private String username;
 	private String firstname;
 	private String lastname;
 	private String address;
@@ -72,6 +75,14 @@ public class Customer {
 
 	public void setAccount(Account account) {
 		this.account = account;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
 	
 	

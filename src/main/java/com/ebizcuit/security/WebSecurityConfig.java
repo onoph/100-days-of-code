@@ -10,7 +10,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception{
 		http
-			.authorizeRequests().antMatchers("/bizcuit").permitAll()
+			.authorizeRequests().antMatchers("/api/public/**").permitAll()
 			.anyRequest().fullyAuthenticated()
 				.and().httpBasic()
 				.and().csrf().disable();
