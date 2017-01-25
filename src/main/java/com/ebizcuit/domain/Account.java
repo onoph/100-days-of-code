@@ -2,14 +2,14 @@ package com.ebizcuit.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
-import org.springframework.data.annotation.Id;
 
 @Entity
 public class Account {
 
 	@Id @GeneratedValue
-	private String id;
+	private Integer id;
 	private String username;
 	private String password;
 	
@@ -19,10 +19,10 @@ public class Account {
 		this.password = password;
 	}
 	
-	public String getId() {
+	public Integer getId() {
 		return id;
 	}
-	public void setId(String id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 	public String getPassword() {

@@ -2,14 +2,16 @@ package com.ebizcuit.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
 
-import org.springframework.data.annotation.Id;
 
 @Entity
 public class Customer {
 
 	@Id @GeneratedValue
 	private Long id;
+	@OneToOne
 	private Account account;
 	private String username;
 	private String firstname;

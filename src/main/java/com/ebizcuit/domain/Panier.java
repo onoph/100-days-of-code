@@ -4,20 +4,22 @@ import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
-import org.springframework.data.annotation.Id;
 
 
 @Entity
 public class Panier {
 	
-	@Id
-	@GeneratedValue
+	@Id @GeneratedValue
 	private Long id;
-
+	@OneToMany
 	private List<ItemPanier> items;
 	private Double totalPrice;
 	
+	@ManyToOne
 	private Customer customer;
 	
 	private Panier()

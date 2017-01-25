@@ -1,11 +1,18 @@
 package com.ebizcuit.domain;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
 import com.ebizcuit.domain.article.AbstractArticle;
 
+@Entity
 public class ItemPanier {
 
-	
+	@Id @GeneratedValue
 	private Long id;
+	@ManyToOne
 	private AbstractArticle article;
 	private int quantity;
 	
