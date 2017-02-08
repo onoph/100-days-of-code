@@ -14,7 +14,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import com.ebizcuit.domain.Account;
 import com.ebizcuit.repository.AccountRepository;
 
-
+/*
 @Configuration
 public class WebSecurityConfiguration extends GlobalAuthenticationConfigurerAdapter {
 
@@ -45,3 +45,4 @@ public class WebSecurityConfiguration extends GlobalAuthenticationConfigurerAdap
 	
 	
 }
+*/

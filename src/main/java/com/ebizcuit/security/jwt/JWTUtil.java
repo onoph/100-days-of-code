@@ -6,6 +6,7 @@ import org.springframework.security.core.userdetails.User;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 
+/*
 public class JWTUtil {
 
 	@Value("${jwt.secret}")
@@ -28,3 +29,4 @@ public class JWTUtil {
 	}
 	
 }
+*/
